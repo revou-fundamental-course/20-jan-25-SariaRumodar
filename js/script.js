@@ -1,0 +1,1 @@
+// ini file javaScript yang akan dijalankan pada halaman web
