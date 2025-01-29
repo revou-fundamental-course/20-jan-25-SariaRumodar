@@ -1,1 +1,48 @@
 /* ini file css */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+
+}
+form{
+    background-color: antiquewhite;
+    padding: 32px;
+}
+.main-header{
+    text-align: center;
+}
+main{
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+.result-section{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 1px;
+}
+#result-bmi{
+    font-size: xxx-large;
+    font-family: math;
+}
+button{
+    border: none;
+    padding: 8px;
+    color: antiquewhite;
+}
+.bg-hitung{
+    background-color: cadetblue;
+}
+.bg-reset{
+    background-color: seagreen;
+}
+footer{
+    text-align: center;
+}
