@@ -2,13 +2,13 @@
 function calculateBmi() {
     let resultBmi = document.getElementById('result-bmi');
     let jenisKelamin = document.getElementById('input-jenis-kelamin').value;
-
+    let inputUsia = document.getElementById('input-usia').value;
     let inputBeratBadan = document.getElementById('input-berat-badan').value;
     let inputTinggiBadan = document.getElementById('input-tinggi-badan').value;
     let statusBmi = document.getElementById('status-bmi');
     let description = document.getElementById('bmi-description'); // Elemen untuk deskripsi
 
-    if (inputBeratBadan != '' && inputTinggiBadan != '') {
+    if (inputBeratBadan != '' && inputTinggiBadan != '' && inputUsia != '' && jenisKelamin != '') {
         let bmi = (inputBeratBadan / ((inputTinggiBadan / 100) ** 2)).toFixed(2);
         resultBmi.textContent = bmi;
 
