@@ -22,6 +22,15 @@
 
         <!-- form -->
         <form >
+                <!-- Menambahkan Jenis Kelamin -->
+            <div class="form-group">
+                <label for="input-jenis-kelamin">Jenis Kelamin</label>
+                <select id="input-jenis-kelamin">
+                    <option value="" disabled selected>Pilih jenis kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
             <div class="form-group">
                 <label for="input-berat-badan">Berat badan (Kg)</label>
                 <input type="number" id="input-berat-badan">
@@ -36,7 +45,7 @@
                 <input type="number" id="input-tinggi-badan">
             </div>
             <div>
-                <button class="bg-hitung">Hitung BMI</button>
+                <button class="bg-hitung" type="button" onclick="calculateBmi()">Hitung BMI</button>
                 <button class="bg-reset">reset</button>
             </div>
 
@@ -46,28 +55,36 @@
             <header>
                 <h2>FITURE INFORMATION</h2>
             </header>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quos modi quibusdam, animi perferendis harum aliquam ullam perspiciatis porro enim, sit similique dolor! Atque fugit ea illo nemo culpa hic!
-            </p>
-         </article>
+            <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.</p>
+
          </section>
 
          <!-- right content -->
           <section>
             <section class="result-section">
                 <header>
-                    <h2>Hasil Perhitungan <BMI></BMI></h2>
+                    <h2>Hasil Perhitungan BMI</h2>
                 </header>
                 <div>
                     <span id="result-bmi">0</span>
                 </div>
+                <p>Status Berat Badan: <span id="status-bmi">-</span></p>
+            </section>
+            <br>
+            
+            <section class="result-section" >
+                <article >
+                    <p id="bmi-description" >Deskripsi akan muncul di sini.</p>
+                </article>
             </section>
 
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor tempora ipsum eos eligendi aliquid. Libero quidem dolorem quo facilis totam dolorum vitae harum, molestiae impedit consectetur iure a voluptatum?</p>
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+                <p>
+                    Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                </p>
+
             </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor tempora ipsum eos eligendi aliquid. Libero quidem dolorem quo facilis totam dolorum vitae harum, molestiae impedit consectetur iure a voluptatum?</p>
           </section>
 
     </main>
@@ -75,5 +92,6 @@
     <footer>
         <span>By Saria@2025 </span>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
